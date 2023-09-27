@@ -1,0 +1,25 @@
+<!--Name, Star player, Stadiums, Ranking, Foundation date, Number of championships-->
+
+<NBA>
+    <team>
+        <name>Chicago Bulls</name>
+        <star>Michael Jordan</star>
+        <stadium>United Center</stadium>
+        <found_date>16/1/1966</found_date>
+        <num_champ>6</num_champ>
+    </team>
+    <team>
+        <name>LA Lakers</name>
+        <star>LeBron James</star>
+        <stadium>Crypto.com Arena</stadium>
+        <found_date>Date unknown, 1947</found_date>
+        <num_champ>16</num_champ>
+    </team>
+    <team>
+        <name>Miami Heat</name>
+        <star>Jimmy Butler</star>
+        <stadium>Kaseya Center</stadium>
+        <found_date>Date unknown, 1988</found_date>
+        <num_champ>3</num_champ>
+    </team>
+</NBA>
