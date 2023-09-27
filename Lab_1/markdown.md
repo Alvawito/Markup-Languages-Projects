@@ -1,36 +1,13 @@
 # Markdown
 
-## Origin
+## Origin and purpose
 
-***Markdown*** is a markup language created by **John Gruber** in 2004. It's normally used for **instant messaging** and in blogs, because it's easy to read in its **source code form**.
+***Markdown*** is a **lightweight markup language** created by **John Gruber** in 2004. Its main purpose is being an alternative to *[HTML](https://es.wikipedia.org/wiki/HTML)* in terms of **simplicity**, but it can also be used for any kind of texts. Overall, you can either use it as **an *HTML* converter** or **an independent language**. 
 
+![Markdown](https://cdn.icon-icons.com/icons2/3265/PNG/512/markdown_icon_207114.png)
 
-## Features
-Markdown has many useful features. The one that's used the *most* is its **coding format**. For example:
+## Why Markdown?
 
-```
-if (i>=0 && i<=7){
-        n++;
-        i++;
-    }
-```
-This language also provides **ordered** and **unordered lists**, such as:
+As I said before, it's one of the simplest languages to perform ***all sorts of tasks***. In its converter form, it's widely used in **blog sites** like **WordPress** or **forums** like **Stackoverflow**. Both of them support *HTML*, as nearly every single page in the **Internet**. 
 
-1. One
-2. Two
-3. Three
-
-- One
-- Two
-- Three
-
-It can also create **tables**:
-
-| Title 1 | Title 2 |
-| ----------- | ----------- |
-| Item 1-1 | Item 2-1 |
-| Item 1-2 | Item 2-2 |
-
-Finally, by using this language you are also able to create **links** to other [files](example.md) or [URLs](https://en.wikipedia.org/wiki/Markdown) and also **images**, such as this one:
-
-![](https://ih1.redbubble.net/image.4800390890.5608/raf,360x360,075,t,fafafa:ca443f4786.jpg)
+If we talk about it as an independent language, though, it can also be utilized in **offline texts** with the help of [a number of apps](https://markdown.es/editores-markdown/), or even in the redaction of
