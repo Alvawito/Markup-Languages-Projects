@@ -10,4 +10,11 @@
 
 As I said before, it's one of the simplest languages to perform ***all sorts of tasks***. In its converter form, it's widely used in **blog sites** like **WordPress** or **forums** like **Stackoverflow**. Both of them support *HTML*, as nearly every single page in the **Internet**. 
 
-If we talk about it as an independent language, though, it can also be utilized in **offline texts** with the help of [a number of apps](https://markdown.es/editores-markdown/), or even in the redaction of
+If we talk about it as an independent language, though, it can also be utilized in **offline texts** with the help of [a number of apps](https://markdown.es/editores-markdown/), or even in the **redaction of e-books**.
+
+## Features, advantages and disadvantages
+
+## Comparisons
+Even with all the advantages listed before, *HTML* is significantly the primary markup language and well above Markdown in terms of popularity
+
+[Go up](#markdown)
