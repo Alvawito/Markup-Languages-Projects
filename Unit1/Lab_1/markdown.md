@@ -53,4 +53,6 @@ Even with all the advantages listed before, *HTML* is significantly the primary 
 |Images| Capability of embedding, image display, behavior options... | Embedding and almost no ability to personalize an image |
 |Tables| Precise table customization and ability to create large and complex tables | Simple tables and complex syntax, lacks table design
 
+For further comparison, [here's](markdown.html) a link to this same document writen in html syntax.
+
 [Go up](#markdown)
