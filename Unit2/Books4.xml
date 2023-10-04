@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<books xmlns:pub="http://www.pubnamespace.com">
+    <book>
+        <title>The Final Empire</title>
+        <authors>
+            <author>Brandon Sanderson</author>
+        </authors>
+        <pub:publisher>NOVA</pub:publisher>
+        <pub_date>16/07/2006</pub_date>
+        <isbn>0-7653-1178-X</isbn>
+        <price>29.99€</price>
+        <pages>647</pages>
+    </book>
+
+    <book>
+        <title>Home Style Cookery</title>
+        <authors>
+            <author>Matty Matheson</author>
+        </authors>
+        <pub:publisher>ABRAMS</pub:publisher>
+        <pub_date>29/09/2020</pub_date>
+        <isbn>1419747487</isbn>
+        <price>25.00€</price>
+        <pages>173</pages>
+    </book>
+
+    <book>
+        <title>20000 Leagues Under the Seas</title>
+        <authors>
+            <author>Jules Verne</author>
+        </authors>
+        <pub:publisher>EDIMAT</pub:publisher>
+        <pub_date>-/-/1870</pub_date>
+        <isbn>9780679203735</isbn>
+        <price>14.99€</price>
+        <pages>244</pages>
+    </book>
+
+    <book>
+        <title>Harry Potter and the Chamber of Secrets</title>
+        <authors>
+            <author>J. K. Rowling</author>
+        </authors>
+        <pub:publisher>SALAMANDRA</pub:publisher>
+        <pub_date>02/07/1998</pub_date>
+        <isbn>0-7475-3849-2</isbn>
+        <price>14.99€</price>
+        <pages>251</pages>
+    </book>
+</books>
