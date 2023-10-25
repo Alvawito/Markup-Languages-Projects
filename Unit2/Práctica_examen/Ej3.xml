@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<recipes>
+    <recipe diners="4">
+        <name>Onion Soup</name>
+        <ingredients>
+            <ingredient>1 kg onions</ingredient>
+            <ingredient>2l beef stock</ingredient>
+            <ingredient>100 gr butter</ingredient>
+            <ingredient>1 spoon flour</ingredient>
+            <ingredient>100 gr grated cheese</ingredient>
+            <ingredient>Toasted bread slices</ingredient>
+            <ingredient>Thyme</ingredient>
+            <ingredient>1 bay leaf</ingredient>
+            <ingredient>Pepper</ingredient>
+        </ingredients>
+        <steps>
+            <step>Peel and slice the onicons thinly</step>
+            <step>Sauté them with the butter, salt, and pepper over low
+                  heat until they are translucent without browning</step>
+            <step>Add the flour while sirring continuously</step>
+            <step>Transfer it to a pot with the broth, thyme and bay leaf</step>
+            <step>Let it simmer over low heat for about 15 minutes</step>
+            <step>Place the bread slices on top, sprinkle with the cheese, and
+                  broil in the oven</step>
+        </steps>
+    </recipe>
+</recipes>

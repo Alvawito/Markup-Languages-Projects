@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ciclos>
+    <ciclo>
+        <nombre>ASIR</nombre>
+        <modulos>
+            <modulo ob="obligatorio">
+                <nombre>Lenguaje de Marcas y Sistemas de Gestion de Información</nombre>
+                <horas_sem>4</horas_sem>
+                <fecha_in>15/09/2023</fecha_in>
+                <fecha_fin>30/06/2024</fecha>
+                <alumnos>
+                    <alumno DNI="16965696L">
+                        <nombre>Ana Fernández Gutiérrez</nombre>
+                        <telefono>789654321</telefono>
+                        <email>ana.fdezgtrrez@hotmail.com</email>
+                        <direccion cp="39302">C/ El Percebe 13, Santander</direccion>
+                        <faltas/>
+                        <notas/>
+                    </alumno>
+                    <alumno DNI="98765432H">
+                        <nombre>Pepito Grillo</nombre>
+                        <telefono>656566555</telefono>
+                        <email>yhyh@yahoo.com</email>
+                        <direccion cp="39401">Av. El Pez 5, Suances</direccion>
+                        <faltas>0</faltas>
+                        <notas>apto</notas>
+                    </alumno>
+                </alumnos>
+            </modulo>
+        </modulos>
+</ciclos>
