@@ -18,7 +18,9 @@
         <ingrediente coding="JAM">Jamón de York</ingrediente>
     </ingredientes>
     <tipos>
-        <tipo nombre="Fantástica" ingredientes="CAL" ingredientes="CHA" ingredientes="ZAN"/>
-        <tipo nombre="Sabrosa" ingredientes="CHA" ingredientes="CHO" ingredientes="JAM" ingredientes="HUE"/>
+        <tipo nombre="Fantástica" ingredientes="CAL CHA"/>
+        <tipo nombre="Sabrosa" ingredientes="CHA CHO JAM HUE"/>
     </tipos>
 </pizzas>
+
+<!--IDREFS separados por comas, uno hace referencia a un ID inexistente-->

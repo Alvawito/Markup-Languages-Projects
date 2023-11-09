@@ -2,7 +2,7 @@
 <!DOCTYPE saludos [
     <!ELEMENT saludos (saludo*)>
     <!ELEMENT saludo (#PCDATA)>
-        <!ATTLIST saludo idioma (ALE | FRA | ITA | POR) "ESP">
+        <!ATTLIST saludo idioma (ALE | FRA | ITA | POR | ESP) "ESP" #IMPLIED>
 ]>
 <saludos>
     <saludo idioma="ALE">Hallo</saludo>
