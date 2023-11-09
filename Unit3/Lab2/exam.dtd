@@ -1,0 +1,13 @@
+<!ELEMENT exam (general,unit+)>
+    <!ELEMENT general (title,author,email)>
+        <!ELEMENT title (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT email (#PCDATA)>
+        <!ATTLIST general date ID #REQUIRED>
+        <!ATTLIST general version CDATA #IMPLIED>
+    <!ELEMENT unit (question+)>
+        <!ELEMENT question (text,answer)>
+        <!ATTLIST unit number ID #REQUIRED>
+            <!ELEMENT text (#PCDATA)>
+            <!ELEMENT answer (#PCDATA)>
+            <!ATTLIST question id ID #REQUIRED>

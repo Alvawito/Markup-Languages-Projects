@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<videogames>
+    <videogame id="001">
+        <title>Doom 64</title>
+        <developer>Bethesda</developer>
+        <release_date>31/03/1997</release_date>
+    </videogame>
+    <videogame id="002">
+        <title>Undertale</title>
+        <developer>Toby Fox</developer>
+        <release_date>15/09/2015</release_date>
+    </videogame>
+    <videogame id="003">
+        <title>Elden Ring</title>
+        <developer>FromSoftware</developer>
+        <release_date>25/02/2022</release_date>
+    </videogame>
+</videogames>

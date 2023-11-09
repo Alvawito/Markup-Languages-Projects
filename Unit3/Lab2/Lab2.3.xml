@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalog>
+    <product id="001">
+        <name>MSI Katana 15</name>
+        <price currency="$">999.99</price>
+        <description>MSI laptop. Intel Core-i7, 8GB RAM</description>
+    </product>
+    <product id="002">
+        <name>Razer Kraken X</name>
+        <price currency="B/.">29.99</price>
+        <description>Razer headset. 7.1 sound quality</description>
+    </product>
+</catalog>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+    <dish>
+        <name>Beef Steak</name>
+        <price currency="€">20.99</price>
+        <ingredients measurement="500g">Beef</ingredients>
+        <ingredients measurement="100g">Butter</ingredients>
+        <ingredients>Rosemary</ingredients>
+        <ingredients>Thyme</ingredients>
+        <category num="5"/>
+    </dish>
+</menu>
