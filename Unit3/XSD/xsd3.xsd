@@ -1,0 +1,7 @@
+<!--Definir un elemento llamado puertaCerrada de tipo lógico, que por defecto tenga el valor "falso", y otro
+elemento llamado ventanaAbierta también de tipo lógico, que tenga asignado el valor fijo "verdadero".-->
+<puertaCerrada/>
+<xs:element name="puertaCerrada" type="xs:boolean" default="false"/>
+
+<ventanaAbierta/>
+<xs:element name="ventanaAbierta" type="xs:boolean" fixed="true"/>
