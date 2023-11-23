@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="registro">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="nick">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[a-zA-Z0-9_]{1,15}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="password">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[a-zA-Z][a-zA-Z0-9%_#@]{6,13}[a-zA-Z0-9]"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="name" type="nameSurname"/>
+                <xs:element name="surname" type="nameSurname"/>
+                <xs:element name="phone">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="[9876][0-9]{8}"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+                <xs:element name="email">
+                    <xs:simpleType>
+                        <xs:restriction base="xs:string">
+                            <xs:pattern value="/[\w._%+-]+@[\w.-]+\.[a-zA-Z]{2,4}/"/>
+                        </xs:restriction>
+                    </xs:simpleType>
+                </xs:element>
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
+
+    <xs:simpleType name="nameSurname">
+        <xs:restriction base="string">
+            <xs:pattern value="[A-Za-zñÑáéíóúÁÉÍÓÚ ]{2,50}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

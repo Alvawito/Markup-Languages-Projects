@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<registro xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="exer07.xsd">
+    <nick>máx 15: letras, números y _</nick>
+    <password>min 8 máx 15: letras, números % _ # @</password>
+    <name>max 50 min 2 solo letras</name>
+    <surname>max 50 min 2 solo letras</surname>
+    <phone>9 números</phone>
+    <email>formato email</email>
+</registro>
