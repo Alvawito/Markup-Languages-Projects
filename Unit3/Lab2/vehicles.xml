@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vehicles xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="Lab2.9.xsd">
+    <vehicle>
+        <brand>Toyota</brand>
+        <model>Corolla</model>
+        <manufacture_date day="01" month="07" year="2006"/>
+        <manufacturing_location>
+            <area country="GE">Europe</area>
+        </manufacturing_location>
+    </vehicle>
+    <vehicle>
+        <brand>Renault</brand>
+        <model>Clio</model>
+        <manufacture_date day="29" month="12" year="2004"/>
+        <manufacturing_location>
+            <area country="ES">Europe</area>
+        </manufacturing_location>
+    </vehicle>
+</vehicles>

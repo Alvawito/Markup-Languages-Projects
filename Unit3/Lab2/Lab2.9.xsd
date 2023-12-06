@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="vehicles">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="vehicle">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="brand" type="xs:string"/>
+                        <xs:element name="model" type="xs:string"/>
+                        <xs:element name="manufacture_date">
+                            <xs:complexType>
+                                <xs:attribute name="day" type="xs:positiveInteger" use="required"/>
+                                <xs:attribute name="month" type="xs:positiveInteger" use="required"/>
+                                <xs:attribute name="year" type="year" use="required"/>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="manufacturing_location"/>
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="area">
+                                        <xs:complexType>
+                                            <xs:attribute name="country" type="countryCode"/>
+                                            <xs:simpleContent>
+                                                <xs:restriction base="xs:string">
+                                                    <xs:enumeration value="Europe"/>
+                                                    <xs:enumeration value="Asia"/>
+                                                    <xs:enumeration value="USA"/>
+                                                </xs:restriction>
+                                            </xs:simpleContent>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="year">
+        <xs:restriction  base="xs:positiveInteger">
+            <xs:minInclusive value="2000"/>
+            <xs:maxInclusive value="2030"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="countryCode">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-Z]{2}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+</xs:schema>

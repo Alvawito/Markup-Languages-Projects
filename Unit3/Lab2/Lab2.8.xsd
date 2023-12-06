@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<xs:element name="stores">
+    <xs:complexType>
+        <xs:sequence>
+            <xs:element name="store">
+                <xs:complexType>
+                    <xs:attribute name="id" type="xs:string" use="required"/>
+                    <xs:attribute name="opening" type="xs:date"/>
+                    <xs:attribute name="data_registration" type="xs:date"/>
+                    <xs:sequence>
+                        <xs:element name="owner">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="name_o" type="fullName"/>
+                                    <xs:element name="dni" type="dni"/>
+                                    <xs:element name="address" type="xs:string" minOccurs="0"/>
+                                    <xs:element name="office" type="xs:string" minOccurs="0"/>
+                                    <xs:element name="contact">
+                                        <xs:complexType>
+                                            <xs:sequence>
+                                                <xs:element name="phone" type="phoneNumber"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType> 
+                        </xs:element>
+                        <xs:element name="warehouse">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="stock">
+                                        <xs:complexType>
+                                            <xs:attribute name="code" type="xs:string" use="required"/>
+                                            <xs:attribute name="type" type="xs:string" use="required"/>
+                                            <xs:sequence>
+                                                <xs:element name="quantity" type="xs:positiveInteger"/>
+                                                <xs:element name="price" type="xs:positiveInteger"/>
+                                                <xs:element name="unit" type="xs:string"/>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                        <xs:element name="partners">
+                            <xs:complexType>
+                                <xs:sequence>
+                                    <xs:element name="partner">
+                                        <xs:complexType>
+                                            <xs:attribute name="number" type="partnerNumber" use="required"/>
+                                            <xs:attribute name="registration" type="xs:date" use="required"/>
+                                            <xs:sequence>
+                                                <xs:element name="name_p" type="fullName"/>
+                                                <xs:element name="phone" type="phoneNumber" minOccurs="0"/>
+                                                <xs:element name="bookings" minOccurs="0">
+                                                    <xs:complexType>
+                                                        <xs:sequence>
+                                                            <xs:element name="booking">
+                                                                <xs:complexType>
+                                                                    <xs:attribute name="code_b" type="xs:string"/>
+                                                                    <xs:attribute name="reference" type="xs:string"/>
+                                                                </xs:complexType>
+                                                            </xs:element>
+                                                        </xs:sequence>
+                                                    </xs:complexType>
+                                                </xs:element>
+                                            </xs:sequence>
+                                        </xs:complexType>
+                                    </xs:element>
+                                </xs:sequence>
+                            </xs:complexType>
+                        </xs:element>
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="fullName">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[A-ZÁÉÍÓÚ][a-záéíóúñ]{2,11} [A-ZÁÉÍÓÚÑ][a-záéíóúñ ]{2,50}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="dni">
+        <xs:restriction base="string">
+            <xs:pattern value="[0-9]{8}[A-Z]"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="phoneNumber">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[5]{3}[0-9]{6}"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="partnerNumber">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[0-9]{3}+-[A_Z]{3}+-[0-9]{4}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:element>
+</xs:schema>

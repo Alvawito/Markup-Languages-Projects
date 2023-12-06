@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!DOCTYPE university [
+    <!ELEMENT university (student*,teacher*,course*)>
+            <!ELEMENT student (data,subject_student+)>
+                <!ELEMENT subject_student (#PCDATA)>
+                <!ATTLIST subject_student grade CDATA (A|B|C|D|F)>
+            <!ELEMENT teacher (data,subject_teacher+,office,schedule*)>
+                <!ELEMENT subject_teacher (#PCDATA)>
+                <!ELEMENT office (#PCDATA)>
+                <!ELEMENT schedule (#PCDATA)>
+            <!ELEMENT course (credits,level*,mandatory)>
+                <!ELEMENT credits (#PCDATA)>
+                <!ELEMENT level (#PCDATA)>
+                <!ELEMENT mandatory EMPTY>
+                <!ATTLIST course code id #REQUIRED>
+
+        <!ELEMENT data (id_card,full_name,birthday,contact?>
+            <!ELEMENT id_card (#PCDATA)>
+            <!ELEMENT full_name (name,first_surname,second_surname?)>
+                <!ELEMENT name (#PCDATA)>
+                <!ELEMENT first_surname (#PCDATA)>
+                <!ELEMENT second_surname (#PCDATA)>
+            <!ELEMENT birthday (#PCDATA)>
+            <!ELEMENT contact (post_add?,number*,email*)>
+                <!ELEMENT post_add (#PCDATA)>
+                <!ELEMENT number (#PCDATA)>
+                <!ELEMENT email (#PCDATA)>
+]>  

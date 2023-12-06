@@ -38,7 +38,7 @@
     </xs:element>
 
     <xs:simpleType name="nameSurname">
-        <xs:restriction base="string">
+        <xs:restriction base="xs:string">
             <xs:pattern value="[A-Za-zñÑáéíóúÁÉÍÓÚ ]{2,50}"/>
         </xs:restriction>
     </xs:simpleType>
