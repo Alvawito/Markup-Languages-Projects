@@ -3,7 +3,7 @@
 	<movie type="mistery" rating="PG-13" review="5" year="1992">
 		<title>Raising Arizona</title>
 		<writer>Ethan Coen</writer>
-		<writer>Joel Coen</writer>
+		<writer>Joel Coen</writer>	 
 		<producer>
 			<name>Ethan</name>
 			<surname>Coen</surname>

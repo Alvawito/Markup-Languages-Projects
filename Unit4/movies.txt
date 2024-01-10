@@ -5,10 +5,16 @@
     //movie[@review="5" and @year<"1995"]/title | //movie[@review="5" and @year<"1995"]/@year
 
 3. Películas cuyo año sea par (necesario operador mod)
+    //movie[@year mod 2="0"]/title
+
 4. Segunda película
+    //movie[position()="2"]/title
 5. Películas en las que ha intervenido el actor Nicolas Cage (text()=‘Nicolas Cage’)
+    //movie/actor[text()="Nicolas Cage"]
 6. Título de las películas en las que ha intervenido el actor Nicolas Cage
+    //movie/actor[text()="Nicolas Cage"]/../title
 7. Actores que han trabajado con el actor Nicolas Cage en alguna película, incluido el propio Nicolas Cage
+
 8. Actores que han trabajado con el actor Nicolas Cage en alguna película, excluido el propio Nicolas Cage
 (operador !=)
 9. Productores que han producido películas del anio 1992
