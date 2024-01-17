@@ -1,0 +1,32 @@
+1.  Nombre de la Universidad
+    /universidad/nombre
+
+2.  Pais de la Universidad
+    /universidad/pais
+
+3.  Nombres de las Carreras
+    //carreras//nombre
+
+4.  Años de plan de estudio de las carreras
+    //carreras//plan
+
+5.  Nombres de todos los alumnos
+    //alumnos//nombre | //alumnos//apellido1 | //alumnos//apellido2
+
+6.  Identificadores de todas las carreras
+    //carreras/carrera/@id
+
+7.  Datos de la carrera cuyo id es c01
+    //carreras/carrera[@id="c01"]
+
+8.  Centro en que se estudia de la carrera cuyo id es c02
+    //carreras/carrera[@id="c02"]/centro
+
+9.  Nombre de las carreras que tengan subdirector
+    //carreras//subdirector/../nombre
+
+10. Nombre de los alumnos que estén haciendo proyecto
+    //alumnos//proyecto/../../nombre | //alumnos//proyecto/../../apellido1 | //alumnos//proyecto/../../apellido2
+
+11. Códigos de las carreras en las que hay algún alumno matriculado
+    //alumnos//estudios/carrera/@codigo
