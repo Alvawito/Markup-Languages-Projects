@@ -87,6 +87,17 @@
     //alumno/estudios/carrera[@codigo=//carrera[not(subdirector)]/@id]/../../nombre
 
 26. Nombre de las alumnos matriculados en asignaturas con 0 créditos prácticos y que estudien la carrera de I.T. Informática
+    //asignaturas/asignatura[creditos_practicos="0"]/@id            #Id de las asignaturas sin créditos prácticos
+    //asignaturas/asignatura[creditos_practicos="0"]/@titulacion    #Nombre de la titulación de las asignaturas sin créditos prácticos
+    //alumnos/alumno/nombre                                         #Nombre de los alumnos
 
+    //alumnos/alumno[estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]]/nombre
+    //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura/@codigo
+    //alumnos/alumno[estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]]/nombre |     //alumnos/alumno/estudios/carrera[@codigo=//carreras/carrera[nombre="I.T. Informática"]/@id]/../asignaturas/asignatura[@codigo=//asignaturas/asignatura[creditos_practicos=0]/@id]/@codigo
+    //alumno[.//carrera[@codigo=//carreras/carrera[nombre="I.T. Informática]/@id]][.//asignatura[@codigo=//asignaturas/asignatura[creditos_practicos="0"]/@id]]/nombre
 
-27. Nombre de los alumnos ques estudian carreras cuyos planes son anteriores a 2002
+27. Nombre de los alumnos que estudian carreras cuyos planes son anteriores a 2002
+
+    //carreras/carrera[plan<2002]/@id           #Id de las carreras con planes anteriores al 2002
+
+    //alumnos/alumno[.//carrera[@codigo=//carreras/carrera[plan<2002]/@id]]/nombre
