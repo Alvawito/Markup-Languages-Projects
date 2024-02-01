@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>turre</title>
+    <style>
+        p{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        span {
+            font-weight: bolder;
+            color: darkblue
+        }
+
+        a {
+            color: green;
+
+        }
+
+        a:visited {
+            color: yellowgreen;
+        }
+
+        a:hover{
+            font-size: xx-large;
+            background-color: orangered;
+            border: 10px dotted;
+            border-color: blue;
+        }
+
+        .ulprime li{
+            list-style:square;
+        }
+
+        .ulsecond li{
+            list-style: armenian;
+        }
+
+        .olprime li{
+            list-style: lower-alpha;
+        }
+
+        .olsecond li{
+            list-style: decimal;
+        }
+
+        dt{
+            font-weight: bolder;
+        }
+
+        h3 {
+            text-decoration:underline;
+        }
+
+        h1{
+            text-align: center;
+            text-transform: uppercase;
+            border: 2px solid green;
+            border-radius: 15px;
+        }
+
+        body{
+            background-color: azure;
+        }
+    </style>
+</head>
+<body>
+    <h1>Recursos para crear listas</h1>
+    <p>En esta página vamos a probar distintos elementos <span>HTML</span> para la creación de <span>listas</span>.</p>
+
+    <p>Este es otro párrafo para enlazar mi página a la <a href="http://premiosesland.com/">Moodle</a></p>
+
+    <ul class="ulprime">
+        <h3>Lista no ordenada (&lt;ul&gt;)</h3>
+        <li>Elem 1</li>
+        <li>Elem 2</li>
+        <li>Elem 3. Tiene sublista</li>
+            <ul class="ulsecond">
+                <li>what the hell, oh my god</li>
+            </ul>
+        <li>Elem 4</li>
+        <li>Elem 5</li>
+    </ul>
+
+        <ol class="olprime">
+        <h3>Lista ordenada (&lt;ol&gt;)</h3>
+        <li>Elem 1</li>
+        <li>Elem 2</li>
+        <li>Elem 3. Tiene sublista</li>
+            <ol class="olsecond">
+                <li>what the hell, oh my god</li>
+            </ol>
+        <li>Elem 4</li>
+        <li>Elem 5</li>
+    </ol>
+
+    <dl class="olprime">
+        <h3>Lista de definición (&lt;dl&gt;)</h3>
+        <dt>Término 1</dt>
+        <dd>Definición del término 1</dd>
+        <dt>Término 2</dt>
+        <dd>Definición del término 2</dd>
+        <dt>Término 3</dt>
+        <dd>Definición del término 3</dd>
+    </dl>
+</body>
+</html>
