@@ -1,0 +1,9 @@
+table,td{
+    border: 3px solid black;
+    border-collapse: collapse;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: xxx-large;
+    background-color:darkgray;
+    vertical-align: middle;
+    text-align: center;
+}

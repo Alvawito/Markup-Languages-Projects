@@ -1,0 +1,17 @@
+table,th,td{
+    border: solid black 3px;
+    border-collapse: collapse;
+}
+
+td.centrar{
+    text-align:center;
+}
+
+td.centrar_vert{
+    vertical-align: middle;
+    text-align: left;
+}
+
+caption{
+    caption-side: bottom;
+}
