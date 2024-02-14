@@ -1,0 +1,76 @@
+<?xml version="1.0"?>
+<catalog>
+    <cd price="10.90">
+        <title>Empire Burlesque</title>
+        <artist>Bob Dylan</artist>
+        <country>USA</country>
+        <company>Columbia</company>
+        <year>1985</year>
+    </cd>
+
+    <cd price="11.90">
+        <title>Hide your heart</title>
+        <artist>Bonnie Tyler</artist>
+        <country>UK</country>
+        <company>CBS Records</company>
+        <year>1988</year>
+    </cd>
+
+
+    <cd price="15.99">
+        <title>The Dark Side of the Moon</title>
+        <artist>Pink Floyd</artist>
+        <country>UK</country>
+        <company>Harvest</company
+        >
+        <year>1973</year>
+    </cd>
+
+    <cd price="12.99">
+        <title>Thriller</title>
+        <artist>Michael Jackson</artist>
+        <country>USA</country>
+        <company>Epic Records</company>
+        <year>1982</year>
+    </cd>
+
+    <cd price="9.99">
+        <title>Back in Black</title>
+        <artist>AC/DC</artist>
+        <country>Australia</country>
+        <company>Atlantic</company>
+        <year>1980</year>
+    </cd>
+
+    <cd price="14.99">
+        <title>Abbey Road</title>
+        <artist>The Beatles</artist>
+        <country>UK</country>
+        <company>Apple Records</company>
+        <year>1969</year>
+    </cd>
+
+    <cd price="17.99">
+        <title>The Wall</title>
+        <artist>Pink Floyd</artist>
+        <country>UK</country>
+        <company>Harvest</company>
+        <year>1979</year>
+    </cd>
+
+    <cd price="10.99">
+        <title>Bad</title>
+        <artist>Michael Jackson</artist>
+        <country>USA</country>
+        <company>Epic Records</company>
+        <year>1987</year>
+    </cd>
+
+    <cd price="13.99">
+        <title>Hotel California</title>
+        <artist>Eagles</artist>
+        <country>USA</country>
+        <company>Asylum Records</company>
+        <year>1976</year>
+    </cd>
+</catalog>

@@ -14,6 +14,7 @@ xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
                     <th style="text-align:center">Year</th>
                 </tr>
                 <xsl:for-each select="catalog/cd">
+                <xsl:sort select="title"/>
                     <tr>
                         <td>
                             <xsl:value-of select="title"/>
