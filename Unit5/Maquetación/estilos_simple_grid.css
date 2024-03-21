@@ -1,0 +1,33 @@
+.grid-container {
+    display:grid;
+    grid-template:
+    "cabecera cabecera cabecera cabecera" 150px
+    "menu menu menu secundaria" 50px
+    "principal principal principal secundaria" 600px
+    "pie pie pie pie" 100px;
+}
+
+header {
+    grid-area: cabecera;
+    background-color: lightblue;
+}
+
+nav {
+    grid-area: menu;
+    background-color: lightcoral;
+}
+
+main {
+    grid-area: principal;
+    background-color: lightgreen;
+}
+
+aside {
+    grid-area: secundaria;
+    background-color: lightseagreen;
+}
+
+footer {
+    grid-area: pie;
+    background-color: lightsalmon;
+}
