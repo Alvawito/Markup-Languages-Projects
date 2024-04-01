@@ -1,15 +1,33 @@
 .grid-container {
-    display:grid;
+    display: grid;
     grid-template:
-    "cabecera cabecera cabecera cabecera" 150px
-    "menu menu menu secundaria" 50px
-    "principal principal principal secundaria" 600px
-    "pie pie pie pie" 100px;
+        "cabecera cabecera cabecera cabecera" 150px
+        "menu menu menu secundaria" 50px
+        "principal principal principal secundaria" 600px
+        "pie pie pie pie" 100px;
+
+    @media(max-width:800px) {
+        grid-template:
+            "cabecera" 100px
+            "menu" 50px
+            "principal" 300px
+            "secundaria" 300px
+            "pie" 100px;
+        p {
+            font-size: 1.2em;
+        }
+        img{
+            height: 75px;
+        }
+    }
+}
+
+img.cabecera{
+    height: 150px;
 }
 
 header {
     grid-area: cabecera;
-    background-color: lightblue;
 }
 
 nav {

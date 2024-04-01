@@ -1,30 +1,116 @@
 * {
-    box-sizing: content-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-}
-.flex-container {
-    display: grid;
-    flex-direction: row;
-    width: 100%;
-    justify-content: flex-start;
-    align-items: center;
-    align-content: center;
-    flex-wrap: wrap;
-    height: 300px;
-    background-color: darkgreen;
-    gap: 20px;
-}
-
-div div {
-    height: 100px;
-    text-align: center;
-    align-items: center;
-    align-content: center;
-    border: 2px solid black;
-    background-color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .grid-container{
     display: grid;
+    grid-template:
+        "cabecera" 50px
+        "menu" auto
+        "principal" 750px
+        "pie" 100px;
+}
+
+header {
+    grid-area: cabecera;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+nav {
+    grid-area: menu;
+}
+
+main  {
+    display: grid;
+    grid-area: principal;
+    grid-template:
+        "imagen_1" 300px
+        "articulos" 150px
+        "imagen_2" 300px
+
+}
+
+.imagen_1 {
+    display: grid;
+    grid-area: imagen_1;
+    width: 50%;
+    border: 1px solid black;
+    margin: auto;
+    grid-template-rows: 150px 150px;
+    grid-template-columns: 16.67% 16.67% 16.67% 50%;
+}
+
+.imagen_1 div {
+    border: 1px solid red;
+    text-align: center;
+
+}
+
+.img_grande {
+    grid-row: 1/3;
+    grid-column: 4/5;
+}
+
+.imagen_2 {
+    grid-area: imagen_2;
+}
+
+.fila_section {
+    background-color: lightseagreen;
+}
+
+.fila_articulos {
+    display: grid;
+    grid-area: articulos;
+    background-color: lightskyblue;
+    width: 50%;
+    border: 1px solid black;
+    margin:auto;
+    grid-template-rows: 20px 140px;
+    grid-template-columns: 25% 25% 25% 25%; 
+}
+
+.fila_articulos div{
+    border: 1px solid red;
+    text-align: center;
+}
+
+footer {
+    grid-area: pie;
+    background-color: lightslategray;
+}
+
+img.cabecera {
+    height: 50px;
+}
+
+#buscador {
+    width: 100%;
+    height: 30px;
+    margin: 5px 10px;
+}
+
+nav ul {
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 0px 10px;
+    padding: 10px;
+    font-weight:lighter;
+}
+
+#menu_principal {
+    float:left;
+}
+
+#menu_secundario {
+    float: right;
 }
