@@ -1,0 +1,55 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body *{
+    border: 1px solid black;
+}
+
+#flex-container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+
+nav {
+display: flex;
+height:40px;
+}
+
+main {
+    display: flex;
+    flex-grow: 1;
+}
+
+#noticias {
+    width: 20%;
+    height: 30vh;
+}
+
+#main-section section {
+    width: 80%;
+}
+
+#main-section aside {
+    width: 20%;
+}
+
+#main-section {
+    display: flex;
+    width: 80%;
+}
+
+footer {
+    height:50px;
+}
