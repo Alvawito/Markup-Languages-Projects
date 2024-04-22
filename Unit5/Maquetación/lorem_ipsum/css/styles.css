@@ -5,8 +5,9 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-body *{
+header, nav, main, footer, aside, article, section{
     border: 1px solid black;
+    border-collapse: collapse;
 }
 
 #flex-container {
@@ -52,4 +53,19 @@ main {
 
 footer {
     height:50px;
+    align-items: center;
+}
+
+img {
+    float: left;
+    margin: 2px 5px 5px 2px;
+    width: 225px;
+}
+
+.clear {
+    clear:both;
+}
+
+p {
+    text-align: justify;
 }
