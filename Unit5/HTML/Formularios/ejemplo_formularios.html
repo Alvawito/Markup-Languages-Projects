@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        #imagen {
+            background-image:url(https://steamuserimages-a.akamaihd.net/ugc/1988933244553042144/602626CC08CA07993465CC86DFEAD5DC0725DFD9/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false);
+            height:75px;
+            width: 75px;
+            background-size: 75px 75px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario 1: Datos personales</h1>
+    <form method="post" enctype="multipart/form-data">
+        <label for="nom">Nombre:</label><br>
+        <input type="text" id="nom" name="nombre" maxlength="15"><br>
+        <label for="ap">Apellidos:</label><br>
+        <input type="text" id="ap" name="apellidos" maxlength="20"><br>
+        <label for="tel">Teléfono:</label><br>
+        <input type="text" id="tel" name="telefono" maxlength="11"><br>
+        <label for="dir">Dirección:</label><br>
+        <input type="text" id="dir" name="direccion" maxlength="25"><br>
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email"><br><br>
+
+        <label for="fec_nac">Fecha de nacimiento:</label><br>
+        <input type="date" id="fec_nac" name="fecha_nacimiento"><br><br>
+
+        <p>¿Tienes un vehículo propio?</p>
+        <input type="radio" id="r1" name="vehiculo">
+        <label for="r1">Sí</label><br>
+        <input type="radio" id="r2" name="vehiculo">
+        <label for="r2">No</label><br><br>
+
+        <p>Selecciona tus lenguajes de marca favoritos:</p>
+        <input type="checkbox" id="ch1" name="XML">
+        <label for="ch1">XML</label><br>
+        <input type="checkbox" id="ch2" name="HTML">
+        <label for="ch2">HTML</label><br>
+        <input type="checkbox" id="ch3" name="Markdown">
+        <label for="ch3">Markdown</label><br><br>
+
+        <label for="range">¿Cuántas ganas tienes de aprender?</label><br>
+        <input type="range" id="range" nombre="ganas"><br><br>
+
+        <label for="color_fav">¿Cuál es tu color favorito?</label><br>
+        <input type="color" id="color_fav" nombre="color"><br><br>
+
+        <label for="img">Sube un archivo: </label>
+        <input type="file" id="img" name="imagen"><br><br>
+
+        <input type="submit" value="Aceptar"><br><br>
+        <input type="reset" value="Reiniciar valores"><br><br>
+        <input type="reset" value="" id="imagen" size="50px">
+    </form>
+</body>
+</html>
