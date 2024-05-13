@@ -1,0 +1,177 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
+}
+
+header,aside,main,footer,div{
+    border: black solid 1px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template:
+    "cabecera cabecera"
+    "lateral principal"
+    "pie pie";
+    
+    grid-template-columns: 3fr 20fr;
+    grid-template-rows: 2fr 30fr 1fr;
+
+    height: 100vh;
+}
+
+@media (max-width: 800px) {
+    .grid-container {
+        display: grid;
+        grid-template:
+        "cabecera lateral"
+        "principal principal"
+        "pie pie";
+        
+        grid-template-columns: auto 250px;
+        grid-template-rows:90px auto 50px;
+
+        height: 100vh;
+    }
+
+    aside {
+        flex-direction: row;
+        gap: 5px;
+        align-items:center;
+        background-color:burlywood;
+    }
+
+    aside a {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 70px;
+        max-height: 70px;
+    }
+
+    aside img, aside a img {
+        width: 70px;
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 750px) {
+    .grid-container {
+        display: grid;
+        grid-template:
+        "cabecera lateral"
+        "principal principal"
+        "pie pie";
+        
+        grid-template-columns: auto 120px;
+        grid-template-rows:90px auto 50px;
+
+        height: 100vh;
+    }
+
+    aside {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: flex-start;
+        gap: 5px;
+        padding-top: 5px;
+        padding-right: 5px;
+        background-color:burlywood;
+    }
+
+    aside a {
+        flex-grow: 0;
+        flex-shrink: 1;
+        flex-basis: 30px;
+        width: 100%;
+        max-height: 30px;
+        max-width: 30px;
+
+    }
+
+    aside img, aside a img {
+        max-height: 30px;
+        width:30px;
+    }
+}
+
+header {
+    grid-area: cabecera;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(../resources/imagenes/Faro_de_Trafalgar_al_atardecer.jpg);
+    background-size:300px 200px;
+}
+
+header div {
+    background-image: url(../resources/fondos/fondo2.jpg);
+    width: 65%;
+    align-items: center;
+}
+
+#escudo {
+    height: 100px;
+    float: left;
+}
+
+aside {
+    grid-area: lateral;
+    display:flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items:center;
+    background-color:burlywood;
+}
+
+.icono {
+    height: 120px;
+}
+
+.icono:hover {
+    background-color: yellowgreen;
+}
+
+#actual {
+    background-color: rgb(208, 167, 113);
+}
+
+main {
+    grid-area: principal;
+    background-image: url(../resources/fondos/fondo3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    grid-area: pie;
+    background-color:khaki;
+    padding: 0px 5px 0px;
+}
+
+article{
+    margin: 20px;
+    text-align: justify;
+}
+
+h2 {
+    color: brown;
+}
+
+article p {
+    margin: 5px;
+    color:darkblue;
+}
+
+.img_texto {
+    height: 200px;
+    float: right;
+    overflow: auto;
+    margin: 5px 5px;
+}
