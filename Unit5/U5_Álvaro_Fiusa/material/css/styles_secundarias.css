@@ -5,7 +5,7 @@
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;   
 }
 
-header,aside,main,footer,div{
+header,aside,main,footer,div,article{
     border: black solid 1px;
 }
 
@@ -70,6 +70,24 @@ main {
     background-attachment: fixed;
 }
 
+main ul {
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    position: sticky;
+    top: 0;
+}
+
+main ul li {
+    list-style: none;
+
+}
+
+main ul li:hover {
+    background-color: lightcyan;
+}
+
 .derecha {
     grid-area: lateral2;
 }
@@ -84,7 +102,6 @@ footer {
 }
 
 article{
-    margin: 20px;
     text-align: justify;
 }
 
@@ -108,4 +125,43 @@ article p, article li {
     height:500px;
     text-align: center;
     border: 0px;
+}
+
+div #gastronomia {
+    display: grid;
+    grid-template:
+    "mojama mojama fideos fideos encebollao encebollao"
+    "morena morena morena recortes recortes recortes";
+
+    height: 100vh;
+}
+
+#mojama {
+    grid-area: mojama;
+}
+#fideos {
+    grid-area: fideos;
+}
+#encebollao {
+    grid-area: encebollao;
+}
+#morena {
+    grid-area: morena;
+}
+#recortes {
+    grid-area: recortes;
+}
+
+.imagenn {
+   height: 300px;
+}
+
+div .borde_rojo {
+    border: red solid 2px;
+}
+
+main div div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios - Registro</title>
+    <style>
+        * {
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            text-align: center;
+
+        }
+
+        body {
+            background-color: burlywood;
+        }
+
+        main {
+            margin: 10px 250px 250px 250px;
+        }
+
+        #principal {
+            border-radius: 25px;
+            border-color: blueviolet;
+        }
+
+        fieldset fieldset {
+            border-radius: 10px;
+            border: 2px dashed black;
+        }
+
+        #datos_personales {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            @media(max-width: 778px) {
+                grid-template-columns: 1fr 1fr;
+        }
+        }
+
+        fieldset div {
+            display: flex;
+            flex-direction:column;
+            justify-content: flex-start;
+             
+        }
+
+        div {
+            margin: 5px;
+        }
+
+        #form {
+            font-weight: bold;
+            color: indigo
+        }
+    </style>
+</head>
+
+<body>
+    <h1> Formulario de Registro</h1>
+    <main>
+        <form>
+            <fieldset id="principal">
+                <fieldset id="datos_personales">
+                    <div>
+                        <label for="fname"> Nombre:
+                            <input type="text" id="fname" name="nombre" placeholder="Escribe tu nombre...">
+                        </label>
+                    </div>
+                    <div>
+                        <label for="lname"> Apellidos:
+                            <input type="text" id="lname" name="apellidos" placeholder="Escribe tus apellidos..." />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="id"> DNI:
+                            <input type="text" id="id" name="DNI" placeholder="Escribe tu DNI..." maxlength="9" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="tlf"> Teléfono:
+                            <input type="tel" id="tlf" name="telefono" placeholder="Número de teléfono..."
+                                maxlength="10" />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="em"> Email:
+                            <input type="email" id="em" name="email" placeholder="Escribe tu correo electrónico..." />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="dir"> Dirección:
+                            <input type="text" id="dir" name="direccion" placeholder="Escribe tu dirección..." />
+                        </label>
+                    </div>
+                    <div>
+                        <label for="fnac"> Fecha de nacimiento:
+                            <input type="date" id="fnac" name="fecha_nacimiento" />
+                        </label>
+                    </div>
+                    <legend>Datos</legend>
+                    <div>
+                        Sexo:
+                        <input type="radio" id="sex1" name="sexo" />
+                        <label for="sex1">Hombre</label>
+                        <input type="radio" id="sex2" name="sexo" />
+                        <label for="sex2">Mujer</label>
+                        <input type="radio" id="sex3" name="sexo" />
+                        <label for="sex3">Prefiero no contestar</label>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <div>
+                        Hobbies:
+
+                        <input type="checkbox" id="hob1" name="videojuegos" />
+                        <label for="hob1">Videojuegos</label>
+                        <input type="checkbox" id="hob2" name="deportes" />
+                        <label for="hob2">Deportes</label>
+                        <input type="checkbox" id="hob3" name="alcayatas" />
+                        <label for="hob3">Alcayatas</label>
+                        <input type="checkbox" id="hob4" name="cerrajeria" />
+                        <label for="hob4">Cerrajería</label>
+                    </div>
+                    <div>
+                        <label for="hor"> Horario de estudio preferido:
+                            <select id="hor" name="horario">
+                                <option value="dia">mañana</option>
+                                <option value="vispera">tarde</option>
+                                <option value="crepusculo">noche</option>
+                            </select>
+                        </label>
+                    </div>
+                    <legend>Información adicional</legend>
+                </fieldset>
+                <legend id="form">Formulario</legend>
+            </fieldset>
+        </form>
+    </main>
+</body>
+
+</html>

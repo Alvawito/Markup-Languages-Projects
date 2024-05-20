@@ -21,19 +21,20 @@
             <a href="./gastronomia.html"><img class="icono" id="actual" title="Gastronomía" src="../resources/iconos/gastronomia.png"></a>
         </aside>
         <main>
-            <article>
-            <p>La gastronomía de Barbate se enmarca dentro de la gastronomía de la provincia de Cádiz, centrada en los productos del mar, en especial el atún de almadraba. Entre los diferentes platos que ofrece pueden destacarse los siguientes:</p>
-            <ul>
-                <li>Mojama. Producto obtenido a partir del lomo del atún, que es sometido a un proceso de curado mediante sazonado y secado al aire. Barbate, junto a Isla Cristina (Huelva), concentra la mayor parte de la producción andaluza de mojama, y desde el año 2015 cuenta con Indicación Geográfica Protegida (IGP).</li>
-                <li>Atún encebollado. Se realiza con la parte del atún conocida como "mormo". Es el plato más destacado de la zona.</li>
-                <li>Fideos con caballas.</li>
-                <li>Recortes de mojama en tomate.</li>
-                <li>Morena frita.</li>
+            <ul id="indice">
+                <li id="moj">mojama</li>
+                <li id="fid">fideos</li>
+                <li id="enc">encebollao</li>
+                <li id="mor">morena</li>
+                <li id="rec">recortes</li>
             </ul>
-            <div class="img_texto_centro">
-                <img title="Atún encebollado" src="../resources/imagenes/atun_enceb.jpg">
+            <div id="gastronomia">
+                <div id="mojama"><img class="imagenn" src="../resources/imagenes/mojama847x435.jpg"></div>
+                <div id="fideos"><img class="imagenn" src="../resources/imagenes/fideos_con_caballa.jpg"></div>
+                <div id="encebollao"><img class="imagenn" src="../resources/imagenes/atun_enceb.jpg"></div>
+                <div id="morena"><img class="imagenn" src="../resources/imagenes/Morena-en-adobo-2017-1.jpg"></div>
+                <div id="recortes"><img class="imagenn" src="../resources/imagenes/recortes-de-mojama-847-847x435.jpg"></div>
             </div>
-            </article>
         </main>
         <aside class="derecha">
             <a href="./historia.html"><img class="icono" title="Historia" src="../resources/iconos/principal.png"></a>
@@ -45,5 +46,52 @@
             <p>Álvaro Fiusa López</p>
         </footer>
     </div>
+    <script>
+        document.getElementById("moj").onclick = alerta1;
+        function alerta1(){
+            document.getElementById("mojama").classList.add("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
+        }
+
+        document.getElementById("fid").onclick = alerta2;
+        function alerta2(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.add("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
+        }
+        
+        document.getElementById("enc").onclick = alerta3;
+        function alerta3(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.add("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
+        }
+        
+        document.getElementById("mor").onclick = alerta4;
+        function alerta4(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.add("borde_rojo")
+            document.getElementById("recortes").classList.remove("borde_rojo")
+        }
+        
+        document.getElementById("rec").onclick = alerta5;
+        function alerta5(){
+            document.getElementById("mojama").classList.remove("borde_rojo")
+            document.getElementById("fideos").classList.remove("borde_rojo")
+            document.getElementById("encebollao").classList.remove("borde_rojo")
+            document.getElementById("morena").classList.remove("borde_rojo")
+            document.getElementById("recortes").classList.add("borde_rojo")
+        }
+        
+    </script>
 </body>
 </html>
